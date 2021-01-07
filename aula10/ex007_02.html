@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docoolmentu</title>
+</head>
+<body>
+    <h1>Teste de treinamento </br></h1>
+    <input type="number" name="mn1" id="mn1">
+    <input type="number" name="mn2" id="mn2">
+    <input type="button" value="botao" onclick="multiplicar()">
+    <div id='res'>Resultado</div>
+    <script>
+        function multiplicar() {
+        var a = window.document.getElementById('mn1')
+        var a1 = Number(mn1.value)
+        var b = window.document.querySelector('input#mn2')
+        var b1 = Number(mn2.value)
+        var res = window.document.getElementById('res')
+        var ab = a * b
+        res.innerHTML = `Resposta: ${a1} multiplicando com ${b1} é igual a ${ab}`
+        }
+    </script>
+</body>
+</html>

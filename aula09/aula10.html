@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id='título'>Nome de título</title>
+</head>
+<body>
+    <h1>Teste de conhecimento</h1>
+    <p id='coisa'>Será que esse teste vai funcionar? </br></p>
+    <p id='opa'>Segunda linha de parágrafo </br></p>
+    
+
+    <script>
+        var teste = window.prompt('Você gosta de que coisa?')
+        window.document.write(`Hum...então você gosta de ${teste}? Que legal!`)
+
+
+    </script>
+
+    <p>Se eu escrever assim, o que vai acontecer??</p>
+
+    <script>
+        window.document.write(`Ué, você tinha dito que ${teste} é algo que gosta!`)
+    </script>
+
+    <p>Deve aparecer assim: </p>
+    
+    <script>
+        var aue = window.document.getElementById('coisa')
+        window.document.write(aue.innerText)
+    </script>
+
+    <p>Testando tag name:</p>
+
+    <script>
+        var tag = window.document.getElementsByTagName('p')[0]
+        window.document.write(tag.innerText)
+        tag.style.background = 'yellow'
+    </script>
+
+    <p>Teste de queryselector</p>
+
+    <div class='Teste de verificação</br>'</div>
+        <a href="https://www.doppelstore.com.br/"></a>
+    
+    <script>
+        var cu = window.document.querySelector('p#opa')
+        window.document.write(cu.innerText)
+        cu.style.background = 'grey'
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dividindo números</title>
+
+    <style>
+        input {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Divisão de números</h1>
+    <input type="number" name="valor1" id="valor1">
+    <input type="number" name="valor2" id="valor2">
+    <input type="time" name="time" id="time">
+    <input type="button" value="dividir" onclick="divide()">
+    <div id="res">Resultado: </div>
+
+    <script>
+        function divide() {
+            var m1 = window.document.querySelector('input#valor1')
+            var m2 = window.document.querySelector('input#valor2')
+            var res = window.document.querySelector('div#res')
+            var time = window.document.querySelector('input#time')
+            var cm1 = Number(m1.value)
+            var cm2 = Number(m2.value)
+            var resul = cm1 / cm2
+            res.innerHTML = `A resposta é ${resul} e foi dada às ${time}`
+        }
+    </script>
+</body>
+</html>

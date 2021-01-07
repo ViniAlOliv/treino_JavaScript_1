@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div#area {
+            background: blue;
+            font:normal 20pt Arial;
+            color: burlywood;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+        }
+
+        div#metro {
+            background: rgb(236, 11, 11);
+            font:normal 20pt Arial;
+            color: rgb(252, 251, 249);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id='area'> Cadê 1 </div>
+
+    <div id='metro'> Cadê 2 </div>
+    
+    <div id='teste'> Cadê 3 </div>
+
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click' , clicar)
+        area.addEventListener('mouseenter' , passar)
+        area.addEventListener('mouseout' , saiu)
+        var metro = window.document.querySelector('div#metro')
+
+        function clicar() {
+            area.innerText = 'Clicando!'
+            area.style.background = 'purple'
+        }
+
+        function passar() {
+            area.innerText = 'Passando'
+        }
+
+        function saiu(){
+            area.innerText = 'Cadê 1'
+            area.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>
