@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloooooo</title>
+</head>
+<body>
+    <h1>Cadê?</h1>
+    Qual é o seu nome? <input type="text" name="nenetexto" id="nenetexto">
+    <input type="button" value="Será?" onclick="responde()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function responde() {
+            var resp = window.document.querySelector('div#res')
+            var nenetext = window.document.querySelector('input#nenetexto')
+            var nene
+            
+            if (nenetext = 'Jexca') {
+                resp.innerHTML = `<p>Seu nome é bonito</p>`
+            } else {
+                resp.innerHTML = `<p>Poxa, você não é Jexca =(</p>`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Você é Brazuca?</h1>
+    Que país você nasceu?: <input type="text" name="pais" id="pais">
+    <input type="button" value="confirma" onclick="resultado()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function resultado() {
+            var nome = window.document.querySelector('input#pais')
+            var res = window.document.querySelector('div#res')
+            var teste = nome.nodeValue(String)
+
+            res.innerHTML = `<p> Você disse que é ${nome} </p>`
+            if (nome == 'Brasil') {
+                res.innerHTML += '<p> Você é Brasileiro! </p>'
+            } else {
+                res.innerHTML += '<p> Você é estrangeiro! </p>'
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
