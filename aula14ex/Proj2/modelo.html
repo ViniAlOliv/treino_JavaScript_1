@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de música</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <header>
+        <h1>Player de música</h1>
+    </header>
+    <section>
+        <div>
+            <p>Rádio do Vini - Shaman</p>
+        </div>
+        
+        <div>
+            <p></p><input type="radio" name="musica" id="shaman-ancientwinds" checked>
+            <label for="shaman-ancientwinds">01 - Ancient Winds</label></p>
+
+            <p></p><input type="radio" name="musica" id="shaman-hereiam">
+            <label for="shaman-hereiam">02 - Here I am</label></p>
+
+            <p></p><input type="radio" name="musica" id="shaman-distantthunder">
+            <label for="shaman-distantthunder">03 - Distant Thunder</label></p>
+
+            <p></p><input type="radio" name="musica" id="shaman-fortomorrow">
+            <label for="shaman-fortomorrow">04 - For Tomorrow</label></p>
+
+            <p></p><input type="radio" name="musica" id="shaman-ritual">
+            <label for="shaman-fortomorrow">09 - Ritual</label></p>
+
+        </div>
+
+        <div id="botao">
+            <input id="botaodeplay" type="button" value=" Troca a música! " onclick="musication()">
+        </div>
+        <div id="playerbo">
+            <audio controls id="tagplayer">
+                <source id="" src="04ForTomorrow.mp3" type="audio/mpeg">
+            </audio>
+            </br>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; cursoemvideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
